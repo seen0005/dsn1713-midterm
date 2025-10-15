@@ -2,10 +2,10 @@
 
 /* Set custom variables here */
 
-:root{
-  --bs-primary:#2e483a;
+:root,[data-bs-theme="dark"]{
+  --bs-primary: #2e483a; 
+  --bs-primary-rgb: 46, 72, 58;
 }
-
 
 
 .navbar-brand {
@@ -47,6 +47,11 @@ h1, h2, h3 {
 section:not(#hero):not(#cta){
   padding: 60px 0;
 }
+
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}/* Had to add this because --bs-primary wasn't working */
 
 @media(min-width: 993px){
   section:not(#hero):not(#cta){
