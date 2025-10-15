@@ -2,7 +2,9 @@
 
 /* Set custom variables here */
 
-
+:root{
+  --bs-primary:#2e483a;
+}
 
 
 
