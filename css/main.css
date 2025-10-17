@@ -5,8 +5,17 @@
 :root,[data-bs-theme="dark"]{
   --bs-primary: #2e483a; 
   --bs-primary-rgb: 46, 72, 58;
+  --bs-border-opacity: 1;
 }
 
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}/* Had to add this because --bs-primary wasn't working */
+
+#customers{
+  background-color: #2e483a;
+}
 
 .navbar-brand {
   color: #F6F3ED;
@@ -34,6 +43,7 @@ h1, h2, h3 {
 }
 
 #cta {
+  height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -48,14 +58,6 @@ section:not(#hero):not(#cta){
   padding: 60px 0;
 }
 
-.btn-primary {
-  background-color: var(--bs-primary) !important;
-  border-color: var(--bs-primary) !important;
-}/* Had to add this because --bs-primary wasn't working */
-
-#customers{
-  background-color: #2e483a;
-}
 
 @media(min-width: 993px){
   section:not(#hero):not(#cta){
