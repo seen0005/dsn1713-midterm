@@ -53,6 +53,10 @@ section:not(#hero):not(#cta){
   border-color: var(--bs-primary) !important;
 }/* Had to add this because --bs-primary wasn't working */
 
+#customers{
+  background-color: #2e483a;
+}
+
 @media(min-width: 993px){
   section:not(#hero):not(#cta){
     padding: 100px 0;
